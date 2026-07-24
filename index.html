@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Plat‑forme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-left">
+    <img src="images/logo-plat-forme.png" class="logo" alt="Plat‑forme">
+    <span class="brand-tagline">Avions & trains, une seule plateforme.</span>
+  </div>
+  <nav class="main-nav">
+    <a href="#" data-section="accueil">Accueil</a>
+    <a href="#" data-section="boutique">Boutique</a>
+    <a href="#" data-section="panier">Panier</a>
+  </nav>
+</header>
+
+<main>
+  <!-- SECTION ACCUEIL -->
+  <section id="accueil" class="hero section">
+    <div class="hero-content">
+      <h1>Plat‑forme</h1>
+      <p>Une sélection de produits inspirés par l’univers des avions et des trains.</p>
+      <a href="#" data-section="boutique" class="btn-primary hero-btn">Découvrir la boutique</a>
+    </div>
+  </section>
+
+  <!-- SECTION BOUTIQUE -->
+  <section id="boutique" class="shop-section section hidden">
+    <h2>Nos produits</h2>
+    <p class="section-intro">
+      Des produits pensés pour les passionnés de transport, entre ciel et rail.
+    </p>
+
+    <div class="product-grid">
+
+      <article class="product-card" data-id="1" data-name="T-shirt Avion & Train" data-price="24.90">
+        <h3>T-shirt Avion & Train</h3>
+        <p>Un t-shirt confortable avec un visuel avion + train, idéal pour les passionnés.</p>
+        <p class="price">24,90 €</p>
+        <button class="btn-secondary add-to-cart">Ajouter au panier</button>
+      </article>
+
+      <article class="product-card" data-id="2" data-name="Poster Plat‑forme" data-price="14.90">
+        <h3>Poster Plat‑forme</h3>
+        <p>Un poster décoratif reprenant l’univers de Plat‑forme, pour ton bureau ou ta chambre.</p>
+        <p class="price">14,90 €</p>
+        <button class="btn-secondary add-to-cart">Ajouter au panier</button>
+      </article>
+
+      <article class="product-card" data-id="3" data-name="Sweat Bretagne Rail & Air" data-price="39.90">
+        <h3>Sweat Bretagne Rail & Air</h3>
+        <p>Un sweat à capuche chaud et stylé, inspiré des lignes aériennes et ferroviaires.</p>
+        <p class="price">39,90 €</p>
+        <button class="btn-secondary add-to-cart">Ajouter au panier</button>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SECTION PANIER -->
+  <section id="panier" class="cart-section section hidden">
+    <h2>Votre panier</h2>
+    <p class="section-intro">
+      Retrouvez ici les produits que vous avez ajoutés. Vous pouvez ajuster ou vider votre panier.
+    </p>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-summary">
+      <p>Total : <span id="cart-total">0,00 €</span></p>
+      <button class="btn-primary" id="checkout-btn">Valider la commande</button>
+      <button class="btn-link" id="clear-cart-btn">Vider le panier</button>
+    </div>
+
+    <p class="checkout-info">
+      (Paiement fictif pour l’instant — intégration Stripe ou autre possible plus tard.)
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Plat‑forme — Concept de boutique inspirée par les transports.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
